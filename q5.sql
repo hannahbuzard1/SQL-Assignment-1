@@ -1,2 +1,1 @@
-SELECT first_name, last_name, ROUND(DATEDIFF(CURDATE(), hire_date)/365) AS years
-FROM employees ORDER BY years DESC;
+SELECT first_name, last_name, ROUND(DATEDIFF(CURDATE(), hire_date)/365.25) AS years FROM employees ORDER BY years DESC;
